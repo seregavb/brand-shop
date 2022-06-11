@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 * {
     margin: 0;
@@ -21,6 +21,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (min-width: 1600px) {
+    .container {
+        margin: 0 auto;
+        width: 1140px;
+    }
 }
 
 .header_User,
@@ -60,6 +67,8 @@ body {
     line-height: 20px;
 }
 
+
+/* Brand________________________________ */
 
 
 .brand {
@@ -169,15 +178,6 @@ body {
     color: #F16D7F;
 }
 
-
-
-@media (min-width: 1600px) {
-    .container {
-        margin: 0 auto;
-        width: 1140px;
-    }
-}
-
 @media (min-width: 768px) {
 
     .header_User,
@@ -185,6 +185,10 @@ body {
         display: inline;
     }
 }
+
+
+/* Offers__________________________ */
+
 
 .offers {
     display: grid;
@@ -246,4 +250,181 @@ body {
     line-height: 29px;
     text-align: center;
     color: #F16D7F;
+}
+
+
+/* Featured Items_______________ */
+
+
+.featuredHeader {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+}
+
+.itemsText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 64px;
+}
+
+.featured {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .featured {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .featured {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.featuredItems {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .featuredItems {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 18px;
+        column-gap: 16px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .featuredItems {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+.featuredItem {
+    width: 100%;
+    display: block;
+    background: #F8F8F8;
+}
+
+.featuredItem img {
+    width: 100%;
+    display: block;
+}
+
+.featuredItemWrap {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    display: block;
+}
+
+.featuredBlack {
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuredItem:hover .featuredBlack {
+    display: flex;
+}
+
+.featuredBlack button {
+    position: absolute;
+    background: none;
+    border: 1px solid white;
+    padding: 11px 16px 11px 13px;
+    color: white;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.featuredBlack img {
+    margin-right: 11px;
+    width: 26px;
+    height: 24px;
+}
+
+.featuredItem_Title {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    margin-left: 18px;
+}
+
+.featuredItem_Text {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.featuredItem_Price {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    margin-left: 18px;
+}
+
+.buttonAllProduct_Wrap {
+    display: flex;
+    width: 100%;
+}
+
+.buttonAllProduct {
+    display: block;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #F26376;
+    padding: 15px 39px 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    margin-bottom: 191px;
+    background: none;
+}
+
+.buttonAllProduct:hover {
+    background-color: #F26376;
+    color: white;
 }
