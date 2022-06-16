@@ -1,2 +1,0 @@
-# brand-shop
-brand-shop
