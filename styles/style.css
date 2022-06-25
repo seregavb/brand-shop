@@ -452,6 +452,7 @@ body {
   margin: 50px auto 64px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   max-width: 304px;
 }
 .productDescription .productDescription_Filter img {
