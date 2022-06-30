@@ -221,12 +221,16 @@
         }
     }
 
-
     .cartRight {
         width: 100%;
 
         @media (max-width: 374px) {
             padding: 0 9px;
+        }
+
+        @media (min-width:768px) and (max-width:1599px) {
+            display: flex;
+            justify-content: space-between;
         }
 
         @media (min-width: 1600px) {
@@ -242,7 +246,20 @@
         }
 
         .cartRightForm {
-            margin-top: 20px;
+            margin-top: 48px;
+
+            @media (min-width:1600px) {
+                margin-top: 0px;
+            }
+
+            @media (min-width:768px) and (max-width:1599px) {
+                margin-top: 64px;
+            }
+
+            @media (min-width: 768px) {
+                flex-grow: 1;
+                margin-right: 15px;
+            }
 
             input {
                 display: block;
@@ -284,26 +301,37 @@
         .cartTotal {
             background: #F5F3F3;
             height: 214px;
-            margin-top: 48px;
+            margin-top: 102px;
             padding: 39px 43px 42px;
             box-sizing: border-box;
+
+            @media (min-width:1600px) {
+                margin-top: 57px;
+            }
 
             hr {
                 margin-top: 21px;
                 margin-bottom: 17px;
+                height: 1px;
+                background: #E2E2E2;
             }
 
             button {
                 background: $majorColor;
                 color: white;
                 border: none;
-                width: 273px;
                 height: 50px;
                 font-family: inherit;
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 19px;
                 color: #FFFFFF;
+                display: block;
+                width: 100%;
+
+                @media (min-width:375px) {
+                    width: 273px;
+                }
             }
 
             @media (max-width:767px) {
@@ -321,6 +349,7 @@
                 font-size: 11px;
                 line-height: 13px;
                 color: #4A4A4A;
+                margin-bottom: 12px;
 
                 span {
                     margin-left: 20px;

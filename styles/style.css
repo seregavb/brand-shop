@@ -299,6 +299,12 @@ body {
     padding: 0 9px;
   }
 }
+@media (min-width: 768px) and (max-width: 1599px) {
+  .cart .cartRight {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 @media (min-width: 1600px) {
   .cart .cartRight {
     width: 360px;
@@ -312,7 +318,23 @@ body {
   color: #222222;
 }
 .cart .cartRight .cartRightForm {
-  margin-top: 20px;
+  margin-top: 48px;
+}
+@media (min-width: 1600px) {
+  .cart .cartRight .cartRightForm {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1599px) {
+  .cart .cartRight .cartRightForm {
+    margin-top: 64px;
+  }
+}
+@media (min-width: 768px) {
+  .cart .cartRight .cartRightForm {
+    flex-grow: 1;
+    margin-right: 15px;
+  }
 }
 .cart .cartRight .cartRightForm input {
   display: block;
@@ -350,25 +372,38 @@ body {
 .cart .cartRight .cartTotal {
   background: #F5F3F3;
   height: 214px;
-  margin-top: 48px;
+  margin-top: 102px;
   padding: 39px 43px 42px;
   box-sizing: border-box;
+}
+@media (min-width: 1600px) {
+  .cart .cartRight .cartTotal {
+    margin-top: 57px;
+  }
 }
 .cart .cartRight .cartTotal hr {
   margin-top: 21px;
   margin-bottom: 17px;
+  height: 1px;
+  background: #E2E2E2;
 }
 .cart .cartRight .cartTotal button {
   background: #F16D7F;
   color: white;
   border: none;
-  width: 273px;
   height: 50px;
   font-family: inherit;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  display: block;
+  width: 100%;
+}
+@media (min-width: 375px) {
+  .cart .cartRight .cartTotal button {
+    width: 273px;
+  }
 }
 @media (max-width: 767px) {
   .cart .cartRight .cartTotal {
@@ -385,6 +420,7 @@ body {
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
+  margin-bottom: 12px;
 }
 .cart .cartRight .cartTotal .cartSubTotal span {
   margin-left: 20px;
